@@ -1781,6 +1781,11 @@ input, select, textarea {
 
 /* Section/Article */
 
+	#one,  #three{
+		background: rgb(85,64,255);
+		background: linear-gradient(1deg, rgba(85,64,255,1) 0%, rgba(194,226,255,1) 0%, rgba(255,255,255,1) 100%);
+	}
+
 	section.special, article.special {
 		text-align: center;
 	}
@@ -1822,6 +1827,12 @@ input, select, textarea {
 			font-weight: 700;
 			margin-top: -0.75em;
 		}
+
+/* h3 .two */
+
+#two h3{
+	margin-bottom:5%;
+}
 
 /* Form */
 
@@ -2215,12 +2226,12 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
-			overflow: hidden;
+			/* border-radius: 100%;
+			overflow: hidden; */
 		}
 
 			.image.avatar img {
-				border-radius: 100%;
+				border-radius: 1rem;
 				display: block;
 				width: 100%;
 			}
@@ -2442,6 +2453,21 @@ input, select, textarea {
 				width: 2.5em;
 			}
 
+/* Skill Icons */
+
+	.skill-icons{
+		display:flex;
+		gap:1rem;
+		padding-bottom:1rem;
+		flex-wrap:wrap;
+		justify-content: space-evenly;
+	}
+
+	.skill-icons > div{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+	}
 /* Icons */
 
 	ul.icons {
@@ -2732,6 +2758,8 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background: #363636;
+		background: rgb(54,54,54);
+		background: linear-gradient(1deg, rgba(54,54,54,1) 0%, rgba(0,0,0,1) 100%);
 		color: #ffffff;
 		height: 100%;
 		overflow-y: auto;
